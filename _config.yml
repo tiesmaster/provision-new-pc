@@ -35,3 +35,10 @@ exclude:
 collections:
   instructions:
     output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: instructions
+    values:
+      layout: page
