@@ -5,7 +5,7 @@
 layout: default
 ---
 
-<h1 class="page-heading">Instructions</h1>
+<h1 class="page-heading">Quick Install Instructions</h1>
 
 <ul class="post-list">
 {% for instruction in site.instructions %}
