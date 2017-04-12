@@ -5,5 +5,12 @@
 layout: home
 ---
 
-<a class="post-link" href="/instructions/total-commander.html">Total Commander</a>
-<a class="post-link" href="/instructions/dropbox.html">Dropbox</a>
+<ul class="post-list">
+{% for instruction in site.instructions %}
+    <li>
+    <h2>
+        <a class="post-link" href="{{ instruction.url | relative_url }}">{{ instruction.title | escape }}</a>
+    </h2>
+    </li>
+{% endfor %}
+</ul>
