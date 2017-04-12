@@ -5,7 +5,14 @@
 layout: default
 ---
 
-<h1 class="page-heading">Quick Install Instructions</h1>
+<div class="ui-widget">
+  <label for="quick-search-box">Go to instruction: </label>
+  <input id="quick-search-box" autofocus>
+</div>
+
+<br>
+
+<h1 class="page-heading">All Quick Install Instructions</h1>
 
 <ul class="post-list">
 {% for instruction in site.instructions %}
@@ -16,3 +23,21 @@ layout: default
     </li>
 {% endfor %}
 </ul>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+<script>
+    $(function() {
+
+        var availableInstructions = $('.post-list li').map(function () {
+            var li = $(this);
+            return { label: li.text().trim(), value: $('a.post-link', li).get(0) };
+        }).get();
+
+        $( "#quick-search-box" ).autocomplete({
+            source: availableInstructions,
+            select: function( event, ui ) { ui.item.value.click()}
+        });
+    });
+</script>
