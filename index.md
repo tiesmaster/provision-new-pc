@@ -4,3 +4,5 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
 ---
+
+<a class="post-link" href="/instructions/total-commander.html">Total Commander</a>
