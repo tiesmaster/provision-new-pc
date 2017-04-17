@@ -47,6 +47,7 @@ layout: default
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<script src="https://rawgit.com/jeresig/jquery.hotkeys/master/jquery.hotkeys.js"></script>
 
 <script>
     $(function() {
@@ -61,6 +62,10 @@ layout: default
         $( "#quick-search-box" ).autocomplete({
             source: availableInstructions,
             select: function( event, ui ) { availableInstructionsDict.find(function(y) { return y.label == ui.item.label; }).value.click()}
+        });
+
+        $(document).bind('keyup', '/', function(){
+            $('#quick-search-box').focus();
         });
     });
 </script>
