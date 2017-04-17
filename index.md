@@ -5,8 +5,8 @@
 layout: default
 ---
 
-<div class="ui-widget">
-  <label for="quick-search-box">Go to instruction: </label>
+<div id="search-area" class="ui-widget">
+  <label id="search-label" for="quick-search-box">Go to instruction: </label>
   <input id="quick-search-box" autofocus>
 </div>
 
@@ -23,6 +23,26 @@ layout: default
     </li>
 {% endfor %}
 </ul>
+
+<style>
+#search-area {
+    margin: 50px;
+}
+
+#search-label {
+    font-size: 20pt;
+    margin-right: 50px;
+}
+
+#quick-search-box {
+    font-size: 20pt;
+}
+
+.ui-autocomplete
+{
+    font-size: 20pt;
+}
+</style>
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
