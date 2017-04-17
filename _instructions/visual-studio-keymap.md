@@ -2,6 +2,6 @@
 categories: visual-studio
 ---
  
- * ctrl-enter -> git.commit (team explorer)
- * alt-c -> add class (solution explorer)
- * ctrl-alt-k -> keymap manager (global)
+ * Ctrl+Shift+Alt+K -> Tools.CustomizeKeyboard (Global)
+ * Ctrl+Enter -> Team.Git.Commit (Team Explorer)
+ * Alt+C -> Project.AddClass (Solution Explorer)
