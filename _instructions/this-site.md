@@ -4,7 +4,7 @@ categories: meta
 
 # Windows
 
-1. Use RubyInstaller, and add ruby executables to PATH
+1. Use [RubyInstaller](https://rubyinstaller.org/), and add ruby executables to PATH
 
 2. Install Jekyll: `gem install jekyll bundler`
 
