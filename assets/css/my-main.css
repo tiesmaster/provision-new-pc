@@ -1,0 +1,16 @@
+#search-area {
+    margin: 50px;
+}
+
+#search-label {
+    font-size: 20pt;
+    margin-right: 50px;
+}
+
+#quick-search-box {
+    font-size: 20pt;
+}
+
+.ui-autocomplete {
+    font-size: 20pt;
+}

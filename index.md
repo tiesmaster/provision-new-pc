@@ -24,25 +24,7 @@ layout: default
 {% endfor %}
 </ul>
 
-<style>
-#search-area {
-    margin: 50px;
-}
-
-#search-label {
-    font-size: 20pt;
-    margin-right: 50px;
-}
-
-#quick-search-box {
-    font-size: 20pt;
-}
-
-.ui-autocomplete
-{
-    font-size: 20pt;
-}
-</style>
+<link rel="stylesheet" href="assets/css/my-main.css">
 
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
