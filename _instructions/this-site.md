@@ -8,6 +8,8 @@ categories: meta
 
 2. Install Jekyll: `gem install jekyll bundler`
 
-3. Install gem modules: `bundle install`
+3. Clone this repo
 
-4. Serve the site: `jekyll serve`
+4. Install gem modules: `bundle install`
+
+5. Serve the site: `jekyll serve`
