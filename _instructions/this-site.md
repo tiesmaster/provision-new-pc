@@ -8,7 +8,7 @@ categories: meta
 
 2. Install Jekyll: `gem install jekyll bundler`
 
-3. Clone this repo
+3. Clone this repo, and change to that directory
 
 4. Install gem modules: `bundle install`
 
