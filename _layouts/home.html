@@ -1,0 +1,55 @@
+---
+layout: default
+---
+
+<div class="home">
+
+    <div id="search-area" class="ui-widget">
+        <label id="search-label" for="quick-search-box">Go to instruction: </label>
+        <input id="quick-search-box" autofocus>
+    </div>
+    
+    {{ content }}
+
+    <br>
+
+    <h1 class="page-heading">All Quick Install Instructions</h1>
+
+    <ul class="post-list">
+        {% for instruction in site.instructions %}
+        <li>
+            <h2>
+                <a class="post-link" href="{{ instruction.url | relative_url }}">{{ instruction.title | escape }}</a>
+            </h2>
+        </li>
+        {% endfor %}
+    </ul>
+
+</div>
+
+<link rel="stylesheet" href="assets/css/my-main.css">
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+<script>
+    $(function() {
+
+        var availableInstructionsDict = $('.post-list li').map(function () {
+            var li = $(this);
+            return { label: li.text().trim(), value: $('a.post-link', li).get(0) };
+        }).get();
+
+        var availableInstructions = availableInstructionsDict.map(function (x) { return x.label; });
+
+        $( "#quick-search-box" ).autocomplete({
+            source: availableInstructions,
+            select: function( event, ui ) { availableInstructionsDict.find(function(y) { return y.label == ui.item.label; }).value.click()}
+        });
+
+        $(document).bind('keyup', '/', function(){
+            $('#quick-search-box').focus();
+        });
+    });
+</script>
