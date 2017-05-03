@@ -15,3 +15,5 @@ categories: meta
 5. Install gem modules: `bundle install`
 
 6. Serve the site: `jekyll serve`
+
+7. Go to [http://localhost:4000/](http://localhost:4000/)
