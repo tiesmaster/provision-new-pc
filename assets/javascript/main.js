@@ -23,4 +23,8 @@ $(function() {
     $(document).bind('keyup', 'n', function(){
         $('#new-instruction').get(0).click();
     });
+
+    $(document).bind('keyup', 'e', function(){
+        $('#edit-instruction').get(0).click();
+    });
 });
