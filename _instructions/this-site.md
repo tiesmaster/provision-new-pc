@@ -6,10 +6,12 @@ categories: meta
 
 1. Use [RubyInstaller](https://rubyinstaller.org/), and add ruby executables to PATH
 
-2. Install Jekyll: `gem install jekyll bundler`
+2. Install [Git](https://git-scm.com/download/win), if on Windows
 
-3. Clone this repo, and change to that directory
+3. Install Jekyll: `gem install jekyll bundler`
 
-4. Install gem modules: `bundle install`
+4. Clone [this](https://github.com/tiesmaster/setting-up-dev-boxes) repo, and change to that directory
 
-5. Serve the site: `jekyll serve`
+5. Install gem modules: `bundle install`
+
+6. Serve the site: `jekyll serve`
