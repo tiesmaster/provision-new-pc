@@ -20,4 +20,7 @@ $(function() {
         $('.site-title').get(0).click();
     });
 
+    $(document).bind('keyup', 'n', function(){
+        $('#new-instruction').get(0).click();
+    });
 });
