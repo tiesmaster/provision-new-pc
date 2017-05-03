@@ -34,6 +34,11 @@
           $(document).bind('keyup', '/', function(){
               $('#quick-search-box').focus();
           });
+
+          $(document).bind('keyup', 'h', function(){
+              $('.site-title').get(0).click();
+          });
+
       });
   </script>
 
