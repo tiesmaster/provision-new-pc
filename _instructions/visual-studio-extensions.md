@@ -9,3 +9,5 @@ categories: visual-studio extensions
  * Viasfora
  
  * HotCommands
+ 
+ * Editor Guidelines
